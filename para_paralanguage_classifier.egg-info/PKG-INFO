@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: para_paralanguage_classifier
+Version: 0.1
+Summary: The Textual Paralanguage Classifier, called PARA, 
+Home-page: https://textualparalanguage.com/
+Author: Yixiang Xu
+Author-email: yixiang-xu@berkeley.edu
+Project-URL: Source, https://github.com/yixiang-xu/PARA
+Project-URL: Paper, https://journals.sagepub.com/doi/full/10.1177/00222437221116058
+Keywords: keyword1 keyword2 keyword3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==1.24.4
+Requires-Dist: pandas==2.0.3
+Requires-Dist: regex==2022.1.18
+Requires-Dist: nltk==3.7
+Requires-Dist: openpyxl==3.1.2
+
+# PARA Python Package
+
+## Introduction
+
+**PARA** (Textual Paralanguage Classifier) is a computerized text analysis software designed to detect nonverbal communication cues in text. It is ideal for researchers and practitioners in text analytics, aimed at uncovering the "properties of nonverbal speech" denoted in text, particularly useful in social media data analysis.
+
+## What is TPL?
+
+TPL, or Textual Paralanguage, represents written manifestations of nonverbal audible, tactile, and visual elements in text. These can be expressed through words, symbols, images, punctuation, demarcations, etc. PARA categorizes TPL into five main categories: voice qualities (VQ), vocalizations (VS), tactile kinesics (TK), visual kinesics (VK), and artifacts (A). Unlike traditional text analytics, PARA focuses on the extratextual features of written communication.
+
+![Description](https://static.wixstatic.com/media/62e0e2_24d79b8cc93e4e689d77b838535166d1~mv2.jpg/v1/fill/w_1336,h_944,al_c,q_85,enc_auto/Table%201.jpg)
+
+
+## Usage and Citation
+
+When using PARA, please cite as follows:
+> Luangrath, Andrea W., Yixiang Xu, and Tong Wang (2023), “Paralanguage Classifier (PARA): An Algorithm for Automatic Coding of Paralinguistic Nonverbal Parts of Speech in Text,” Journal of Marketing Research, 60 (2), 388-408.
+
+
+## Functions and Outputs
+
+Our package allows you to output 
+
+
+## Code Structure
+
+- `TPL_Int_Score.py`: Compiles all PARA modules.
+- `test.py`: Test script for `TPL_Int_Score.py`, available in two versions: with and without multiprocessing.
+- `Detect_Wordbased_TPL`: Folder containing word/phrase based TPL element detection (VQ stress, pitch, tempo, emphasis, etc.).
+- `Detect_Silence`: Module for detecting the repetition of silence symbols.
+- `Detect_Emphasis`: Module for detecting word/phrase repetition and punctuation repetition.
+- `Detect_Spelling`: Module for detecting words connected by symbols (e.g., s-l-o-w).
+- `Detect_Rhythm`: Module for detecting word-symbol alternations.
+- `Detect_Censorship`: Module for detecting censorship.
+- `Detect_Asterisk_TPL`: Folder for asterisk pattern TPL elements detection (VQ volume, VK alphakinesics, etc.).
+- `Detect_Emojicon_TPL`: Folder for emoji/emoticon based TPL elements detection.
+- `Detect_Formatting`: Module for detecting formatting.
+
+
+
