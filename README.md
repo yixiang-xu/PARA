@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PARA Python Package
 
 ## Introduction
@@ -92,9 +91,3 @@ The following code modules are the building block wrappers for output the nonver
 - `Detect_Asterisk_TPL`: Folder for asterisk pattern TPL elements detection (VQ volume, VK alphakinesics, etc.).
 - `Detect_Emojicon_TPL`: Folder for emoji/emoticon based TPL elements detection.
 - `Detect_Formatting`: Module for detecting formatting.
-
-
-
-=======
-# PARA
->>>>>>> origin/main
