@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PARA Python Package
 
 ## Introduction
@@ -94,3 +95,6 @@ The following code modules are the building block wrappers for output the nonver
 
 
 
+=======
+# PARA
+>>>>>>> origin/main
