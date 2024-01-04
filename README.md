@@ -25,6 +25,21 @@ The PARA package offers a range of functions designed to extract various nonverb
 
 
 ### Sample Code 
+We will distribute this package through PyPI soon for easier installation soon. For now, you can install the PARA Python package using the following commands:
+
+1. **Download and Build the Package:**
+   First, clone the repository from GitHub and build the package using `python setup.py bdist_wheel`:
+   ```terminal
+   git clone https://github.com/yixiang-xu/PARA.git
+   cd PARA
+   python setup.py bdist_wheel
+   ```
+2. **Install the Package:**
+	After building, install the package with pip:  
+	```terminal
+	pip install dist/para_paralanguage_classifier-0.1-py3-none-any.whl
+	``` 
+
 You can use the following sample code to extract your desired nonverbal features from a text line.
 
 ```python
