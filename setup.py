@@ -1,5 +1,7 @@
 from setuptools import setup, find_packages
-
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read(),  # Long description read from the readme file
+        
 setup(
     name='para_paralanguage_classifier',
     version='0.1',  # Your package's version
@@ -13,8 +15,7 @@ setup(
     This tool is particularly well suited for processing social media data, 
     as this form of text often includes informal communication such as emojis. 
     PARA will help you capture the auditory, visual, and tactile elements of nonverbal text speech which may reveal thoughts, feelings, personality, motivations, and behaviors.''',  # A short description
-    with open('README.md', 'r', encoding='utf-8') as f:
-        long_description = f.read(),  # Long description read from the readme file
+    long_description=long_description,
     long_description_content_type='text/markdown',  # Type of the long description, usually markdown or plain text
     url='https://textualparalanguage.com/',  # Link to your package's GitHub repo or website
     packages=find_packages(),  # Automatically find all packages and subpackages
