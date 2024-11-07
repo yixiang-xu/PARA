@@ -1,5 +1,9 @@
 from setuptools import setup, find_packages
 
+# Read README with proper encoding
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name='para_paralanguage_classifier',
     version='0.1',  # Your package's version
