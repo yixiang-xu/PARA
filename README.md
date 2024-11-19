@@ -32,6 +32,7 @@ We will distribute this package through PyPI soon for easier installation soon. 
    ```terminal
    git clone https://github.com/yixiang-xu/PARA.git
    cd PARA
+   mv build/lib/para_paralanguage_classifier .
    python setup.py bdist_wheel
    ```
 2. **Install the Package:**
